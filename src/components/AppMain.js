@@ -1,5 +1,6 @@
 import React from 'react';
 import Carousel from './Carousel';
+import CategoriesGallery from './CategoriesGallery';
 
 export default function AppMain() {
   return (
@@ -11,6 +12,7 @@ export default function AppMain() {
         </p>
       </section>
       <Carousel />
+      <CategoriesGallery />
     </main>
   );
 }
