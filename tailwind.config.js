@@ -294,7 +294,9 @@ module.exports = {
       auto: 'auto',
       ...theme('spacing'),
       full: '100%',
+      '80': '80%',
       screen: '100vh',
+      carousel: '700px',
     }),
     inset: {
       '0': '0',
@@ -339,6 +341,7 @@ module.exports = {
     maxHeight: {
       full: '100%',
       screen: '100vh',
+      carousel: '800px',
     },
     maxWidth: (theme, { breakpoints }) => ({
       none: 'none',

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import SlideImage from './SlideImage';
 import prev from '../assets/images/prev.png';
 import next from '../assets/images/next.png';
@@ -9,6 +9,7 @@ import screw from '../assets/images/screwdriver.jpg';
 
 export default function Carousel() {
   const [currentIndex, setcurrentIndex] = useState(0);
+  const [isPlaying, setisPlaying] = useState(true);
 
   const slides = [
     {
@@ -29,16 +30,37 @@ export default function Carousel() {
     },
   ];
 
+  useEffect(() => {
+    if (isPlaying) {
+      let timeout = setTimeout(() => {
+        setcurrentIndex((currentIndex + 1) % slides.length);
+      }, 3000);
+
+      return () => clearTimeout(timeout);
+    }
+
+    if (!isPlaying) {
+      let timeout = setTimeout(() => {
+        setisPlaying(true);
+      }, 5000);
+
+      return () => clearTimeout(timeout);
+    }
+  }, [currentIndex, isPlaying, slides]);
+
   function prevSlide() {
     setcurrentIndex((currentIndex - 1 + slides.length) % slides.length);
+    setisPlaying(false);
   }
 
   function nextSlide() {
     setcurrentIndex((currentIndex + 1) % slides.length);
+    setisPlaying(false);
   }
 
   function goToSlide(index) {
     setcurrentIndex(index);
+    setisPlaying(false);
   }
 
   return (
@@ -69,7 +91,8 @@ export default function Carousel() {
       </button>
       <div className="h-4 absolute inset-x-0 bottom-1/8 mx-auto flex justify-evenly w-3/5">
         {slides.map((slide, index) => {
-          let classes = 'w-1/5 bg-gray-100 bg-opacity-25 hover:bg-gray-400';
+          let classes =
+            'w-1/5 border-2 border-black bg-gray-100 bg-opacity-25 hover:bg-gray-400';
 
           if (index === currentIndex) {
             classes = 'w-1/5 bg-gray-400';
