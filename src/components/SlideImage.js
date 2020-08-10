@@ -7,7 +7,7 @@ export default function SlideImage({ image, title, active }) {
   }
   return (
     <div className={classes}>
-      <img className="w-full" src={image} alt={title}></img>
+      <img className="w-full max-h-carousel" src={image} alt={title}></img>
       <h2 className="text-gray-700 font-semibold bg-gray-300 text-center text-4xl object-top">
         {title}
       </h2>

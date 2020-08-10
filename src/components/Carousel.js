@@ -64,7 +64,7 @@ export default function Carousel() {
   }
 
   return (
-    <div className="w-4/5 relative flex">
+    <div className="w-3/5 mt-8 mx-auto relative flex">
       {slides.map((slide, index) => {
         return (
           <SlideImage

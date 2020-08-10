@@ -266,6 +266,7 @@ module.exports = {
         'monospace',
       ],
       title: ['Bungee', 'sans-serif'],
+      welcome: ['Suez One', 'serif'],
     },
     fontSize: {
       xs: '0.75rem',
@@ -296,7 +297,7 @@ module.exports = {
       full: '100%',
       '80': '80%',
       screen: '100vh',
-      carousel: '700px',
+      carousel: '500px',
     }),
     inset: {
       '0': '0',
@@ -341,7 +342,7 @@ module.exports = {
     maxHeight: {
       full: '100%',
       screen: '100vh',
-      carousel: '800px',
+      carousel: '500px',
     },
     maxWidth: (theme, { breakpoints }) => ({
       none: 'none',

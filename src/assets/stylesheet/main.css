@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -6263,6 +6265,10 @@ video {
   font-family: Bungee, sans-serif;
 }
 
+.font-welcome{
+  font-family: Suez One, serif;
+}
+
 .font-hairline{
   font-weight: 100;
 }
@@ -6464,7 +6470,7 @@ video {
 }
 
 .h-carousel{
-  height: 700px;
+  height: 500px;
 }
 
 .text-xs{
@@ -7732,7 +7738,7 @@ video {
 }
 
 .max-h-carousel{
-  max-height: 800px;
+  max-height: 500px;
 }
 
 .max-w-none{
@@ -20579,6 +20585,10 @@ video {
     font-family: Bungee, sans-serif;
   }
 
+  .sm\:font-welcome{
+    font-family: Suez One, serif;
+  }
+
   .sm\:font-hairline{
     font-weight: 100;
   }
@@ -20780,7 +20790,7 @@ video {
   }
 
   .sm\:h-carousel{
-    height: 700px;
+    height: 500px;
   }
 
   .sm\:text-xs{
@@ -22048,7 +22058,7 @@ video {
   }
 
   .sm\:max-h-carousel{
-    max-height: 800px;
+    max-height: 500px;
   }
 
   .sm\:max-w-none{
@@ -34852,6 +34862,10 @@ video {
     font-family: Bungee, sans-serif;
   }
 
+  .md\:font-welcome{
+    font-family: Suez One, serif;
+  }
+
   .md\:font-hairline{
     font-weight: 100;
   }
@@ -35053,7 +35067,7 @@ video {
   }
 
   .md\:h-carousel{
-    height: 700px;
+    height: 500px;
   }
 
   .md\:text-xs{
@@ -36321,7 +36335,7 @@ video {
   }
 
   .md\:max-h-carousel{
-    max-height: 800px;
+    max-height: 500px;
   }
 
   .md\:max-w-none{
@@ -49125,6 +49139,10 @@ video {
     font-family: Bungee, sans-serif;
   }
 
+  .lg\:font-welcome{
+    font-family: Suez One, serif;
+  }
+
   .lg\:font-hairline{
     font-weight: 100;
   }
@@ -49326,7 +49344,7 @@ video {
   }
 
   .lg\:h-carousel{
-    height: 700px;
+    height: 500px;
   }
 
   .lg\:text-xs{
@@ -50594,7 +50612,7 @@ video {
   }
 
   .lg\:max-h-carousel{
-    max-height: 800px;
+    max-height: 500px;
   }
 
   .lg\:max-w-none{
@@ -63398,6 +63416,10 @@ video {
     font-family: Bungee, sans-serif;
   }
 
+  .xl\:font-welcome{
+    font-family: Suez One, serif;
+  }
+
   .xl\:font-hairline{
     font-weight: 100;
   }
@@ -63599,7 +63621,7 @@ video {
   }
 
   .xl\:h-carousel{
-    height: 700px;
+    height: 500px;
   }
 
   .xl\:text-xs{
@@ -64867,7 +64889,7 @@ video {
   }
 
   .xl\:max-h-carousel{
-    max-height: 800px;
+    max-height: 500px;
   }
 
   .xl\:max-w-none{
