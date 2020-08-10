@@ -6443,6 +6443,10 @@ video {
   height: 16rem;
 }
 
+.h-80{
+  height: 80%;
+}
+
 .h-auto{
   height: auto;
 }
@@ -6457,6 +6461,10 @@ video {
 
 .h-screen{
   height: 100vh;
+}
+
+.h-carousel{
+  height: 700px;
 }
 
 .text-xs{
@@ -7721,6 +7729,10 @@ video {
 
 .max-h-screen{
   max-height: 100vh;
+}
+
+.max-h-carousel{
+  max-height: 800px;
 }
 
 .max-w-none{
@@ -20747,6 +20759,10 @@ video {
     height: 16rem;
   }
 
+  .sm\:h-80{
+    height: 80%;
+  }
+
   .sm\:h-auto{
     height: auto;
   }
@@ -20761,6 +20777,10 @@ video {
 
   .sm\:h-screen{
     height: 100vh;
+  }
+
+  .sm\:h-carousel{
+    height: 700px;
   }
 
   .sm\:text-xs{
@@ -22025,6 +22045,10 @@ video {
 
   .sm\:max-h-screen{
     max-height: 100vh;
+  }
+
+  .sm\:max-h-carousel{
+    max-height: 800px;
   }
 
   .sm\:max-w-none{
@@ -35008,6 +35032,10 @@ video {
     height: 16rem;
   }
 
+  .md\:h-80{
+    height: 80%;
+  }
+
   .md\:h-auto{
     height: auto;
   }
@@ -35022,6 +35050,10 @@ video {
 
   .md\:h-screen{
     height: 100vh;
+  }
+
+  .md\:h-carousel{
+    height: 700px;
   }
 
   .md\:text-xs{
@@ -36286,6 +36318,10 @@ video {
 
   .md\:max-h-screen{
     max-height: 100vh;
+  }
+
+  .md\:max-h-carousel{
+    max-height: 800px;
   }
 
   .md\:max-w-none{
@@ -49269,6 +49305,10 @@ video {
     height: 16rem;
   }
 
+  .lg\:h-80{
+    height: 80%;
+  }
+
   .lg\:h-auto{
     height: auto;
   }
@@ -49283,6 +49323,10 @@ video {
 
   .lg\:h-screen{
     height: 100vh;
+  }
+
+  .lg\:h-carousel{
+    height: 700px;
   }
 
   .lg\:text-xs{
@@ -50547,6 +50591,10 @@ video {
 
   .lg\:max-h-screen{
     max-height: 100vh;
+  }
+
+  .lg\:max-h-carousel{
+    max-height: 800px;
   }
 
   .lg\:max-w-none{
@@ -63530,6 +63578,10 @@ video {
     height: 16rem;
   }
 
+  .xl\:h-80{
+    height: 80%;
+  }
+
   .xl\:h-auto{
     height: auto;
   }
@@ -63544,6 +63596,10 @@ video {
 
   .xl\:h-screen{
     height: 100vh;
+  }
+
+  .xl\:h-carousel{
+    height: 700px;
   }
 
   .xl\:text-xs{
@@ -64808,6 +64864,10 @@ video {
 
   .xl\:max-h-screen{
     max-height: 100vh;
+  }
+
+  .xl\:max-h-carousel{
+    max-height: 800px;
   }
 
   .xl\:max-w-none{
