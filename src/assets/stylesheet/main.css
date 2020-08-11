@@ -7813,6 +7813,10 @@ video {
   min-height: 100%;
 }
 
+.min-h-login{
+  min-height: calc(100vh - 6rem);
+}
+
 .min-h-screen{
   min-height: 100vh;
 }
@@ -22133,6 +22137,10 @@ video {
     min-height: 100%;
   }
 
+  .sm\:min-h-login{
+    min-height: calc(100vh - 6rem);
+  }
+
   .sm\:min-h-screen{
     min-height: 100vh;
   }
@@ -36408,6 +36416,10 @@ video {
 
   .md\:min-h-full{
     min-height: 100%;
+  }
+
+  .md\:min-h-login{
+    min-height: calc(100vh - 6rem);
   }
 
   .md\:min-h-screen{
@@ -50687,6 +50699,10 @@ video {
     min-height: 100%;
   }
 
+  .lg\:min-h-login{
+    min-height: calc(100vh - 6rem);
+  }
+
   .lg\:min-h-screen{
     min-height: 100vh;
   }
@@ -64962,6 +64978,10 @@ video {
 
   .xl\:min-h-full{
     min-height: 100%;
+  }
+
+  .xl\:min-h-login{
+    min-height: calc(100vh - 6rem);
   }
 
   .xl\:min-h-screen{

@@ -362,6 +362,7 @@ module.exports = {
     minHeight: {
       '0': '0',
       full: '100%',
+      login: 'calc(100vh - 6rem)',
       screen: '100vh',
     },
     minWidth: {
