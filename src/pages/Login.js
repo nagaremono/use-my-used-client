@@ -1,12 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
+import { GlobalContext } from '../context/GlobalContext';
 
 export default function Login() {
   const [username, setusername] = useState('');
   const [password, setpassword] = useState('');
 
+  const { token, login } = useContext(GlobalContext);
+
+  useEffect(() => {
+    console.log(token);
+  }, [token]);
+
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    login(username, password);
+  }
+
   return (
     <div className="bg-gray-200 min-h-login mx-auto pt-8">
-      <form className="bg-white max-w-md mx-auto shadow-lg rounded px-8 py-6 mb-4">
+      <form
+        onSubmit={handleSubmit}
+        className="bg-white max-w-md mx-auto shadow-lg rounded px-8 py-6 mb-4"
+      >
         <div className="mb-6">
           <label
             className="block text-gray-700 text-base font-bold mb-2"
@@ -48,7 +64,7 @@ export default function Login() {
         <div className="flex items-center justify-center">
           <button
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            type="button"
+            type="submit"
           >
             Sign In
           </button>
