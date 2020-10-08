@@ -3,7 +3,8 @@ import AppHeader from './components/AppHeader';
 import Landing from './pages/Landing';
 import Login from './pages/Login';
 import Register from './pages/Register';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Dashboard from './pages/Dashboard';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { GlobalProvider } from './context/GlobalContext';
 
 function App() {
@@ -21,6 +22,9 @@ function App() {
             </Route>
             <Route path="/register">
               <Register />
+            </Route>
+            <Route path="/dashboard">
+              <Dashboard />
             </Route>
           </Switch>
         </div>
