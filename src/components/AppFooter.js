@@ -9,7 +9,7 @@ export default function AppFooter() {
         <ul>
           {credits.map((credit) => {
             return (
-              <li className="ml-4">
+              <li key={credit.user} className="ml-4">
                 <span className="text-sm">
                   Photo by{' '}
                   <a className="font-semibold" href={credit.link}>
